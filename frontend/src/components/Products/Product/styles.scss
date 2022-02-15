@@ -1,0 +1,37 @@
+.product-image {
+  width: 360px;
+  height: 360px;
+}
+
+.product {
+  flex: 1 1 33%;
+  padding: 10px;
+}
+
+.product-info {
+  position: relative;
+
+  h4 {
+    font-size: 22px;
+  }
+
+  span {
+    font-size: 18px;
+    color: #a1a1a1;
+    font-weight: 500;
+  }
+}
+
+.stars {
+  display: flex;
+  list-style: none;
+  position: absolute;
+  right: 10px;
+  top: 10%;
+  :not(:last-child) {
+    margin-right: 4px;
+  }
+  li {
+    font-size: 0.8rem;
+  }
+}
