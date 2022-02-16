@@ -1,15 +1,16 @@
 import React from 'react';
 import styles from './styles.scss';
 import { FaStar } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
-const Product = props => {
+const Product = ({ imageUrl, price, name, productId }) => {
   return (
     <>
-      <div class="product">
-        <img class="product-image" src={props.img} alt="" />
+      <Link to={`/product/${productId}`} class="product">
+        <img class="product-image" src={imageUrl} alt="" />
         <div class="product-info">
-          <h4>{props.title}</h4>
-          <span>{props.price}</span>
+          <h4>{name}</h4>
+          <span>$ {price}.00</span>
           <ul class="stars">
             <li>
               <FaStar />
@@ -28,7 +29,7 @@ const Product = props => {
             </li>
           </ul>
         </div>
-      </div>
+      </Link>
     </>
   );
 };
