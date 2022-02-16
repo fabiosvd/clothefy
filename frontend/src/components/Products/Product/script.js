@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom';
 const Product = ({ imageUrl, price, name, productId }) => {
   return (
     <>
-      <Link to={`/product/${productId}`} class="product">
-        <img class="product-image" src={imageUrl} alt="" />
-        <div class="product-info">
+      <Link to={`/product/${productId}`} className="product">
+        <img className="product-image" src={imageUrl} alt="" />
+        <div className="product-info">
           <h4>{name}</h4>
           <span>$ {price}.00</span>
-          <ul class="stars">
+          <ul className="stars">
             <li>
               <FaStar />
             </li>

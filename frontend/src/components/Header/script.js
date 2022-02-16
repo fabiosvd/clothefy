@@ -6,20 +6,20 @@ import { FaRegUserCircle, FaShoppingBag } from 'react-icons/fa';
 const Header = () => {
   return (
     <header>
-      <div class="header-container">
+      <div className="header-container">
         <Link to="/">
-          <a href="#" class="logo">
+          <a href="#" className="logo">
             <img src="/images/logo.svg" alt="" />
           </a>
         </Link>
-        <div class="options">
+        <div className="options">
           <Link to="/cart">
-            <a href="" class="profile-icon">
+            <a href="" className="profile-icon">
               <FaRegUserCircle />
             </a>
           </Link>
           <Link to="/cart">
-            <a href="" class="profile-icon">
+            <a href="" className="profile-icon">
               <FaShoppingBag />
             </a>
           </Link>

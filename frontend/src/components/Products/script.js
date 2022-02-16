@@ -19,11 +19,11 @@ const Products = props => {
   }, [dispatch]);
 
   return (
-    <div class="product-container">
-      <div class="products-title">
+    <div className="product-container">
+      <div className="products-title">
         <h2>Our Latest {option}</h2>
       </div>
-      <div class="products">
+      <div className="products">
         {loading ? (
           <h2>Loading...</h2>
         ) : error ? (

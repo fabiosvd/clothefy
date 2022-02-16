@@ -10,11 +10,11 @@ import { addToCart } from '../../redux/actions/cartActions';
 const SingleProduct = props => {
   return (
     <div className="single-content">
-      <img class="single-image" src={props.img} alt="" />
-      <div class="single-info">
+      <img className="single-image" src={props.img} alt="" />
+      <div className="single-info">
         <h4>{props.name}</h4>
-        <span class="price">${props.price}.00</span>
-        <ul class="single-stars">
+        <span className="price">$ {props.price}.00</span>
+        <ul className="single-stars">
           <li>
             <FaStar />
           </li>
@@ -32,8 +32,8 @@ const SingleProduct = props => {
           </li>
         </ul>
         <span>{props.description}</span>
-        <div class="quote">
-          <FaQuoteLeft class="quote-icon" />
+        <div className="quote">
+          <FaQuoteLeft className="quote-icon" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiuski smod.
@@ -43,18 +43,18 @@ const SingleProduct = props => {
           <h6>No. of Orders</h6>
 
           <div className="quantity-buttons">
-            <input type="button" value="-" class="alter-btn" />
+            <input type="button" value="-" className="alter-btn" />
             <input
               type="number"
               name="quantity"
               value="1"
               title="Qty"
-              class="value-btn"
+              className="value-btn"
             ></input>
-            <input type="button" value="+" class="alter-btn" />
+            <input type="button" value="+" className="alter-btn" />
           </div>
         </div>
-        <div class="total">
+        <div className="total">
           <h4>Total: $210.00</h4>
           <a onClick={props.addToCart} href="#">
             Add To Cart
