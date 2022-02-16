@@ -13,12 +13,16 @@ const Header = () => {
           </a>
         </Link>
         <div class="options">
-          <a href="" class="profile-icon">
-            <FaRegUserCircle />
-          </a>
-          <a href="" class="profile-icon">
-            <FaShoppingBag />
-          </a>
+          <Link to="/cart">
+            <a href="" class="profile-icon">
+              <FaRegUserCircle />
+            </a>
+          </Link>
+          <Link to="/cart">
+            <a href="" class="profile-icon">
+              <FaShoppingBag />
+            </a>
+          </Link>
         </div>
       </div>
     </header>
