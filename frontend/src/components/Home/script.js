@@ -11,31 +11,31 @@ const Home = () => {
           title="Hoodies"
           subtitle="Shop Now"
           link="/products/hoodies"
-          banner="https://miro.medium.com/max/1400/1*zUz0Kp39Pu8c0Fejd9xWrA.jpeg"
+          banner="./images/bannerhoodies.jpeg"
         />
         <Category
           title="Shoes"
           subtitle="Shop Now"
           link="/products/shoes"
-          banner="https://addicted2success.com/wp-content/uploads/2020/07/Create-Your-Happiness-Don%E2%80%99t-Pursue-It.png"
+          banner="./images/bannershoes.png"
         />
         <Category
           title="Sweatpants"
           subtitle="Shop Now"
           link="/products/sweatpants"
-          banner="https://images.unsplash.com/photo-1502791451862-7bd8c1df43a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80"
+          banner="./images/bannersweatpants.jfif"
         />
         <Category
           title="Caps"
           subtitle="Shop Now"
           link="/products/caps"
-          banner="https://images.hdqwalls.com/download/man-standing-at-ocean-shore-pic-1600x1200.jpg"
+          banner="./images/bannercaps.jpg"
         />
         <Category
           title="Watches"
           subtitle="Shop Now"
           link="/products/watches"
-          banner="https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2119&q=80"
+          banner="./images/bannerwatches.jfif"
         />
       </div>
     </main>
