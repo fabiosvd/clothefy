@@ -51,7 +51,7 @@ const SingleProduct = props => {
           </div>
         </div>
         <div className="total">
-          <h4>Total: $210.00</h4>
+          <h4>Total: $ {props.price}.00</h4>
           <button onClick={props.addToCart} href="">
             Add To Cart
           </button>
