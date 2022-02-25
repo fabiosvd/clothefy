@@ -115,7 +115,8 @@
       align-self: center;
     }
 
-    a {
+    button {
+      background-color: #fff;
       border: 1px solid #2a2a2a;
       color: #2a2a2a;
       font-size: 13px;
@@ -126,6 +127,7 @@
         background-color: #2a2a2a;
         color: #fff;
         transition: all 0.3s;
+        cursor: pointer;
       }
     }
   }

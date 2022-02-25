@@ -10,7 +10,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 const SingleProductPage = ({ match, history }) => {
   window.scrollTo(0, 0);
-  const [qty, setQty] = useState(1);
+  const [qty] = useState(1);
   const dispatch = useDispatch();
 
   const productDetails = useSelector(state => state.getProductDetails);

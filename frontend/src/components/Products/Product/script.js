@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles.scss';
+import './styles.scss';
 import { FaStar } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 

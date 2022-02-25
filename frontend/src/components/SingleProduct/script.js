@@ -1,11 +1,7 @@
 import './styles.scss';
-import { useState, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
 import { FaStar, FaQuoteLeft } from 'react-icons/fa';
 
 // Actions
-import { getProductDetails } from '../../redux/actions/productActions';
-import { addToCart } from '../../redux/actions/cartActions';
 
 const SingleProduct = props => {
   return (
@@ -56,9 +52,9 @@ const SingleProduct = props => {
         </div>
         <div className="total">
           <h4>Total: $210.00</h4>
-          <a onClick={props.addToCart} href="#">
+          <button onClick={props.addToCart} href="">
             Add To Cart
-          </a>
+          </button>
         </div>
       </div>
     </div>

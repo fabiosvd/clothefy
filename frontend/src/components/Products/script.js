@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Product from '../Products/Product/script';
-import styles from './styles.scss';
+import './styles.scss';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProducts as listProducts } from '../../redux/actions/productActions';
@@ -31,7 +30,7 @@ const Products = props => {
         ) : (
           products
             .filter(product => {
-              return product.category == option;
+              return product.category === option;
             })
             .map(product => (
               <Product

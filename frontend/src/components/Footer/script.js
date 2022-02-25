@@ -6,7 +6,7 @@ const Footer = () => {
     <footer>
       <div className="footer-content">
         <p></p>
-        <a href="https://github.com/fabiosvd" target="_blank">
+        <a href="https://github.com/fabiosvd" target="_blank" rel="noreferrer">
           © Fabio Salvador 2022
         </a>
       </div>
