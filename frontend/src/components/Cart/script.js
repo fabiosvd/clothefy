@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import './styles.scss';
+import StripeCheckout from 'react-stripe-checkout';
 
 // Components
+
 import CartItem from './CartItem/script';
 
 // Actions
@@ -35,6 +37,17 @@ const CartPage = () => {
       .reduce((price, item) => price + item.price * item.qty, 0)
       .toFixed(2);
   };
+  // Stripe
+
+  const priceForStripe = getCartSubTotal() * 100;
+
+  const publishableKey =
+    'pk_test_51KWkxCLQGdRCK8O8qau3fWp8EgjSHVvHPnS4qlAsF7cQKS61eUclSMQvgwtb3KXAD30vcjzXnQ4ZGIKPfERLYc3r00ueVHioyp';
+
+  const onToken = token => {
+    console.log(token);
+    alert('Payment Successful');
+  };
 
   return (
     <div className="cartpage">
@@ -62,10 +75,23 @@ const CartPage = () => {
       <div className="cartpage-right">
         <div className="cartpage-info">
           <p>Subtotal ({getCartCount()}) items</p>
-          <p>${getCartSubTotal()}</p>
+          <p>$ {getCartSubTotal()}</p>
         </div>
         <div>
-          <button>Proceed To Checkout</button>
+          <StripeCheckout
+            label="Pay Now"
+            name="Clothify"
+            billingAddress
+            shippingAddress
+            description={`Your total is ${getCartSubTotal()}`}
+            amount={priceForStripe}
+            bitcoin
+            panelLabel="Pay Now"
+            token={onToken}
+            stripeKey={publishableKey}
+          >
+            <button>Proceed To Checkout</button>
+          </StripeCheckout>
         </div>
       </div>
     </div>
