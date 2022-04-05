@@ -80,7 +80,7 @@ const CartPage = () => {
         <div>
           <StripeCheckout
             label="Pay Now"
-            name="Clothify"
+            name="Clothefy"
             billingAddress
             shippingAddress
             description={`Your total is ${getCartSubTotal()}`}
