@@ -9,7 +9,7 @@ Clothefy is a fictional online clothing store built by me using MERN Stack techn
   -	The customer can add different products to the cart, change the quantity and remove them.
   -	The integration with Stripe allows the customer to checkout and pay. 
 
-### Technologies Used
+## 💹 Technologies Used
 
 #### Backend
 
@@ -28,7 +28,7 @@ Clothefy is a fictional online clothing store built by me using MERN Stack techn
 - Axios (For http requests)
 - Sass
 
-## 💻 &nbsp; Setup
+## 💻 Setup
 
 To run this project, install it locally using npm:
 
@@ -43,13 +43,13 @@ $ npm run client (for React client side development)
 $ npm run dev (for both client and server side)
 ```
 
-## &nbsp; ENV
+## ENV
 - PORT=
 - MONGO_URI=
 - NODE_ENV='development'
 
 
-# Author
+## Author
 
 👤 &nbsp; **Fabio S. Ambos**
 
